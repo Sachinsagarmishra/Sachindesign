@@ -223,7 +223,46 @@
 							<div class="tt-section-inner tt-wrap max-width-900">
 
 								<div class="text-xxlg">
-									<h2 class="anim-fadeinup">Hello,</h2>
+									<h2 class="anim-fadeinup">
+										<div class="hello-slider-wrapper">
+										  <div class="hello-slider" id="hello-slider">
+											<div>Hello, 👋🇺🇸</div>
+											<div>Hola, 👋🇪🇸</div>
+											<div>Bonjour, 👋🇫🇷</div>
+											<div>Namaste, 🙏🇮🇳</div>
+											<div>Hi, 👋🌍</div>
+											<div>Ciao, 👋🇮🇹</div>
+											<div>Konnichiwa, 🙇‍♂️🇯🇵</div>
+											<div>Salam, 🤝🇮🇷</div>
+											<div>Hallo, 👋🇩🇪</div>
+											<div>Annyeong, 🫰🇰🇷</div>
+											<div>Olá, 👋🇧🇷</div>
+										  </div>
+										</div>
+										</h2>
+										
+										<style>
+											.hello-slider-wrapper {
+										  height: 50px; /* Adjust according to font size */
+										  overflow: hidden;
+										  position: relative;
+										}
+										
+										.hello-slider {
+										  display: flex;
+										  flex-direction: column;
+										  transition: transform 0.5s ease-in-out;
+										}
+										
+										.hello-slider div {
+										  height: 50px; /* Match wrapper height */
+										  display: flex;
+										  align-items: center;
+										  justify-content: flex-start;
+										  font-size: 2rem;
+										  font-weight: bold;
+										}
+										</style>
 									
 									<p class="anim-fadeinup">Sachin is a seasoned Designer & Developer with over 04+ years of experience, passionate about blending creativity with technology. <br>
 										Starting as a freelancer in college, Sachin has grown to leading product design for apps with millions of users. He has worked across industries including Fintech, Web3, Creator Economy, eCommerce, and CRM, contributing to over 150 projects for 70+ clients globally.</p>
@@ -371,6 +410,17 @@
 
 		<!-- Template master JS -->
 		<script src="assets/js/theme.js"></script>
+<!-- Hello animation -->
+				<script>
+			const slider = document.getElementById("hello-slider");
+			const totalItems = slider.children.length;
+			let currentIndex = 0;
+		  
+			setInterval(() => {
+			  currentIndex = (currentIndex + 1) % totalItems;
+			  slider.style.transform = `translateY(-${currentIndex * 50}px)`; // Match the height
+			}, 2500);
+		  </script>	
 
 
 
