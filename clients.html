@@ -203,8 +203,7 @@
             <button class="filter-btn active" data-filter="all">Show All</button>
             <button class="filter-btn" data-filter="FMCG">FMCG</button>
             <button class="filter-btn" data-filter="tech">Tech & Education</button>
-            <button class="filter-btn" data-filter="fashion-decor">Fashion & Decor</button>
-            <button class="filter-btn" data-filter="drinks-skincare">Drinks & Skincare</button>
+            <button class="filter-btn" data-filter="fashion-decor">Fashion & Decor & Skincare</button>
             <button class="filter-btn" data-filter="travel">Travel</button>
             <button class="filter-btn" data-filter="crm-erp">CRMs & ERPs</button>
         </div>
@@ -212,11 +211,6 @@
 
     <div class="clients-grid" id="clientsGrid">
         <!-- FMCG Clients -->
-        <div class="client-item show" data-category="FMCG">
-            <a href="https://anikmart.in/" target="_blank">
-                <img src="assets/img/clients/Anikmart.webp" alt="Ruchocks" class="client-logo">
-            </a>
-        </div>
         <div class="client-item show" data-category="FMCG">
             <a href="https://ruchoks.com/" target="_blank">
                 <img src="assets/img/clients/Ruchocks.webp" alt="Ruchocks" class="client-logo">
@@ -246,7 +240,6 @@
 
 
         <!-- Tech & Education Clients -->
-
         <div class="client-item show" data-category="tech">
             <a href="https://auslese-automation.com/" target="_blank">
                 <img src="assets/img/clients/Auslese Automation.webp" alt="CA_Toppers_Examination" class="client-logo">
@@ -305,6 +298,50 @@
         </div>
         
 
+
+         <!-- Fahion & decor & Skincare Clients -->
+         <div class="client-item show" data-category="fashion-decor">
+            <a href="https://anikmart.in/" target="_blank">
+                <img src="assets/img/clients/Anikmart.webp" alt="Ruchocks" class="client-logo">
+            </a>
+        </div>
+         <div class="client-item show" data-category="fashion-decor">
+            <a href="https://frenchfactor.com/" target="_blank">
+                <img src="assets/img/clients/frenchfactor.webp" alt="frenchfactor" class="client-logo">
+            </a>
+        </div>
+        <div class="client-item show" data-category="fashion-decor">
+            <a href="https://sorbetco.com/" target="_blank">
+                <img src="assets/img/clients/Sorbet.webp" alt="Sorbet" class="client-logo">
+            </a>
+        </div>
+        <div class="client-item show" data-category="fashion-decor">
+            <a href="https://thegoldenweddingfair.com/" target="_blank">
+                <img src="assets/img/clients/thegoldenweddingfair.webp" alt="thegoldenweddingfair" class="client-logo">
+            </a>
+        </div>
+        <div class="client-item show" data-category="fashion-decor">
+            <a href="https://samaywatch.com/" target="_blank">
+                <img src="assets/img/clients/Samay.webp" alt="samaywatch" class="client-logo">
+            </a>
+        </div>
+        <div class="client-item show" data-category="fashion-decor">
+            <a href="https://thetribekids.com/" target="_blank">
+                <img src="assets/img/clients/thetribekids.webp" alt="thetribekids" class="client-logo">
+            </a>
+        </div>
+        <div class="client-item show" data-category="fashion-decor">
+            <a href="https://organity.in/" target="_blank">
+                <img src="assets/img/clients/Organity.webp" alt="Organity" class="client-logo">
+            </a>
+        </div>
+        <div class="client-item show" data-category="fashion-decor">
+            <a href="https://www.johnpride.in/" target="_blank">
+                <img src="assets/img/clients/johnpride.webp" alt="johnpride" class="client-logo">
+            </a>
+        </div>
+
+
         <!-- Travel -->
         <div class="client-item show" data-category="travel">
             <a href="#" target="_blank">
@@ -337,7 +374,7 @@
             </a>
         </div>      
         
-<!-- FMCG Clients -->
+<!-- ERP & CRM Clients -->
         <div class="client-item show" data-category="crm-erp">
             <img src="assets/img/clients/Alsowise.webp" alt="Alsowise" class="client-logo">
         </div>
@@ -445,6 +482,8 @@
         text-decoration: none;
         width: 100%;
         height: 100%;
+        /* filter: grayscale(100%); */
+        transition: filter 0.3s ease;
         display: flex;
         align-items: center;
         justify-content: center;
